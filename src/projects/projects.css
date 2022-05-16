@@ -1,0 +1,155 @@
+.project_container {
+  padding: 0 5rem 6rem 6rem;
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+.project_nav{
+  margin:auto;
+
+
+  width:30%;
+  height:70px;
+  border-bottom: 1px solid;
+}
+.projects__allItems {
+  display: flex;
+  gap: 3rem;
+  margin: 4rem;
+
+}
+.projectnav_list{
+ display: flex;
+justify-content: center;
+direction: row;
+padding-top: 20px;
+  height: 40px;
+}
+.projectnav_list li{
+  margin:0px 40px 0px 40px;
+  height:30px;
+  width:30%;
+  align-items: center;
+  color:var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+}
+.projectnav_list li:hover{
+ 
+  color:var(--color-light);
+  background-color: var(--color-light);
+
+}
+.active_project_list{
+ 
+  color:var(--color-white);
+  background-color: var(--color-light);
+
+}
+.swiper-container {
+  padding-top: 5rem;
+  max-width: 100%;
+  height: 50%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background: var(--color-bg-variant);
+  z-index: 10;
+  right: 60px;
+  left: auto;
+  top: 0;
+  transform: translateY(50%);
+  color: var(--color-white);
+  border-radius: 8px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1rem;
+}
+
+
+/* IPAD RESPONSIVENESS */
+@media only screen and (max-width: 1024px) {
+  .project_container {
+    /* padding: 0 4rem 4rem 4rem ; */
+    width: 800px;
+  }
+  
+.projects__allItems {
+  display: flex;
+  gap:0rem;
+  margin: 4rem;
+  width:90%;
+}
+
+}
+/*
+@media only screen and (max-width: 768px) {
+  .projects__allItems {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    gap: 5rem;
+   .projectItem__img {
+      width: 100%;
+    }
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .project_container {
+    padding: 0 6rem 6rem 6rem ;
+    width: 100%;
+    padding:0;
+  }
+  
+.projects__allItems {
+  display: flex;
+  gap:0rem;
+  margin: 4rem;
+  width:80%;
+}
+/* .swiper-container {
+  padding-top: 3rem;
+
+  height: 40%;
+} */
+
+.projectnav_list li{
+  margin:0px 10px 0px 10px;
+  height:20px;
+  width:60%;
+  
+  border-radius: 5px;
+
+
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0.4rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;;
+  transform: translateY(50%);
+
+  border-radius: 4px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+}

@@ -1,0 +1,32 @@
+.heading-fm{
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 4rem;
+    margin-bottom:4rem;
+}
+.subheading-fm{
+    display: flex;
+    justify-content: center;
+  color: var(--color-white);
+  margin-top: 4rem;
+  margin-bottom:4rem;
+}
+.container-fm{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container-fmimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  margin-bottom:4rem;
+  padding: 20px;
+
+}
+.container-fmimg  img{
+   
+    max-width:400px;
+    max-height: 600px;
+
+}

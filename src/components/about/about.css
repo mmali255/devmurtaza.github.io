@@ -1,0 +1,118 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+  animation: rotate-me 1s ease-out forwards;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(-10deg);
+}
+.about__me :hover {
+  transform: rotate(0);
+  transition: var(--transition);
+}
+.about__content {
+  background: linear-gradient(var(--color-bg-variant), transparent);
+  border-radius: 6rem;
+  display: grid;
+  place-items: center;
+  animation: right-left 1s ease-out forwards;
+  padding-bottom: 2rem;
+}
+.about__content:hover {
+  background: var(--color-bg-variant);
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem #163e94;
+}
+
+.about__head {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2.5rem 5rem 2.5rem;
+  color: var(--color-primary);
+  font-size: x-large;
+}
+.about__content p {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 4rem 3rem 4rem;
+}
+
+@keyframes right-left {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rotate-me {
+  from {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+}
+/* media queries (small) */
+
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3 rem;
+  }
+  .about__content {
+    border-radius: 2rem;
+    margin-left: 15px;
+    margin-right:15px;
+  }
+  
+ 
+  .about__head {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: small;
+  }
+  .about__content p {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: x-small;
+  }
+}

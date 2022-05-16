@@ -1,0 +1,373 @@
+.resume-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+
+.resume-card {
+  margin-top: 50px;
+  display: flex;
+  height: 600px;
+  width: 1400px;
+  margin-left: calc(50% - 700px);
+  border: 1px solid;
+  /* margin: 80px 0; */
+}
+
+.resume-bullets {
+  box-shadow: 15px 0 9px -15px var(--color-primary);
+  height: 100%;
+  width: 320px;
+}
+
+.resume-bullet-details {
+  flex-grow: 1;
+  width: 600px;
+  height: 360px;
+  overflow: hidden;
+  padding: 80px 80px 80px 80px;
+  margin: 80px;
+}
+.resume-screen-container a{
+  font-size: 13px;
+}
+.experience-description {
+  margin: 10px 0 0 0;
+  text-align: justify;
+}
+
+.resume-description-text {
+  font-size: 12px;
+}
+
+.resume-details-carousal {
+  transition: transform 1s ease-out;
+}
+
+.bullet-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bullets {
+  width: 86%;
+  position: relative;
+  z-index: 2;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  margin: 40px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  width: 30px;
+  transition: width 0.6s ease;
+  background-color: var(--color-primary);
+}
+
+.bullet-label {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.bullet-logo {
+  height: 40px;
+  width: 30px;
+  margin: 0 30px 0 0;
+  color: var(--color-white);
+}
+
+.bullet-icons {
+  width: 50px;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--color-primary);
+  position: absolute;
+}
+
+.selected-bullet {
+  color: var(--color-white);
+  width: 100%;
+}
+
+.resume-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 360px;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.resume-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-main-heading span {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.experience-description {
+  max-width: 100%;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.resume-sub-heading {
+  font-size: 14px;
+
+  color: var(--color-light);
+  margin: 10px 0 0 0;
+}
+
+.resume-heading-description {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.heading-date {
+  background-color: var(--color-primary);
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  color: var(--color-white);
+}
+
+.skill-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.programming-skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-percentage {
+  position: relative;
+  height: 15px;
+  width: 70%;
+  background-color: var(--color-light);
+}
+
+.skill-percentage .active-percentage-bar {
+  height: 15px;
+  transition: 0.8s ease;
+  position: absolute;
+  background-color: var(--color-primary);
+}
+
+.skill-parent span {
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+/* IPAD RESPONSIVENESS */
+@media only screen and (max-width: 1024px) {
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 400px;
+  }
+
+  .resume-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+    border: 0;
+  }
+
+  .resume-bullet-details {
+    height: 360px;
+    padding: 0;
+    width: fit-content;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+  .bullet {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    margin: 20px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width: 30px;
+  }
+  .bullet-logo {
+    height: 40px;
+    width: 20px;
+    margin: 0 80px 0 0;
+    color: var(--color-white);
+  }
+
+  .bullet-icons {
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--color-primary);
+    position: absolute;
+  }
+
+  .resume-bullets {
+    margin: 20px 0 0 120px;
+    width: 600px;
+    height: 300px;
+  }
+
+  .selected-bullet {
+    width: 100%;
+  }
+}
+
+/* media queries (small) */
+
+@media screen and (max-width: 600px) {
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 200px;
+  }
+
+  .resume-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+  }
+  .heading-bullet {
+    position: absolute;
+    left: -20px;
+    height: 10px;
+    width: 10px;
+    top: 3px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+  }
+
+  .resume-bullet-details {
+    height: 360px;
+    padding: 0;
+    width: 250px;
+    margin: 0 0 0 10px;
+  }
+  .resume-screen-container {
+    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+  }
+  .resume-screen-container a{
+    font-size: 10px;
+  }
+  .bullet {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    margin: 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width: 30px;
+  }
+  .bullet-logo {
+    height: 15px;
+    width: 15px;
+    margin: 0 40px 0 0;
+    color: var(--color-white);
+  }
+
+  .bullet-icons {
+    width: 30px;
+    height: 150px;
+    z-index: 1;
+    background-color: var(--color-primary);
+    position: absolute;
+  }
+  .resume-bullets {
+    margin: 0 0 0 40px;
+    width: 250px;
+    height: 200px;
+  }
+  .skill-parent {
+
+    width: 40%;
+    margin-left:20px;
+  }
+  .selected-bullet {
+    width: 100%;
+  }
+  .resume-description-text {
+    font-size: 10px;
+  }
+  .resume-main-heading span {
+    color: var(--color-primary);
+    font-size: 12px;
+  }
+
+  .resume-sub-heading {
+    font-size: 12px;
+
+    color: var(--color-light);
+    margin: 10px 0 0 0;
+  }
+ .portfolio-project-screen-btn{
+   margin:auto;
+}
+  .resume-heading-description {
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .heading-date {
+    background-color: var(--color-primary);
+    padding: 2px 6px;
+    font-size: 10px;
+    border-radius: 14px;
+    color: var(--color-white);
+  }
+  .skill-parent span {
+    font-size: 14px;
+  }
+}
