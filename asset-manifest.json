@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/devmurtaza.github.io/static/css/main.ea41ddcb.css",
+    "main.js": "/devmurtaza.github.io/static/js/main.00f203c0.js",
+    "static/js/27.83ccf0df.chunk.js": "/devmurtaza.github.io/static/js/27.83ccf0df.chunk.js",
+    "static/media/facemask.mp4": "/devmurtaza.github.io/static/media/facemask.b12d4f989ca8181cd521.mp4",
+    "static/media/peoplecounter.mp4": "/devmurtaza.github.io/static/media/peoplecounter.90ad738adc0a838254e6.mp4",
+    "static/media/medium.jpg": "/devmurtaza.github.io/static/media/medium.6d362dc8f0c6eaed86e2.jpg",
+    "static/media/me.png": "/devmurtaza.github.io/static/media/me.601b65172cf3d9869905.png",
+    "static/media/cointracker.jpg": "/devmurtaza.github.io/static/media/cointracker.8da9e0cd4402156b905b.jpg",
+    "static/media/linefollower.jpg": "/devmurtaza.github.io/static/media/linefollower.92073af884c25b8c3f87.jpg",
+    "static/media/gripper.jpg": "/devmurtaza.github.io/static/media/gripper.8d85a06d7546bc0c24af.jpg",
+    "static/media/tempsensing.jpg": "/devmurtaza.github.io/static/media/tempsensing.c0bd55cc9e988aa23ada.jpg",
+    "static/media/about.png": "/devmurtaza.github.io/static/media/about.05302c7f2c8656d5d688.png",
+    "static/media/peoplefm.jpg": "/devmurtaza.github.io/static/media/peoplefm.ff00cf650abad457a9c9.jpg",
+    "static/media/roboarena.jpg": "/devmurtaza.github.io/static/media/roboarena.666cdb564ecd02d3f02e.jpg",
+    "static/media/nasa.jpg": "/devmurtaza.github.io/static/media/nasa.61c15ab030b25d6536d2.jpg",
+    "static/media/facemask.jpg": "/devmurtaza.github.io/static/media/facemask.8bdea3fcd93af4dfc44e.jpg",
+    "static/media/quizo.jpg": "/devmurtaza.github.io/static/media/quizo.3d137b34f2548658664f.jpg",
+    "static/media/projectImg.png": "/devmurtaza.github.io/static/media/projectImg.771236e1a97e2201a189.png",
+    "index.html": "/devmurtaza.github.io/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.ea41ddcb.css",
+    "static/js/main.00f203c0.js"
+  ]
+}
